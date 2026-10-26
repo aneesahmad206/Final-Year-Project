@@ -1,0 +1,54 @@
+#cb-alert-container {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: min(360px, calc(100vw - 24px));
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.cb-alert {
+  background: #fff3f3;
+  border: 2px solid #ff4d4f;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  animation: slideIn 0.2s ease-out;
+  pointer-events: auto;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.cb-alert-content {
+  padding: 14px 40px 14px 14px;
+  position: relative;
+}
+
+.cb-alert h3 {
+  color: #b42318;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cb-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+}
+
+.cb-close-btn:hover {
+  color: #333;
+}

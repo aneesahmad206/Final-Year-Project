@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberbullying Detector</title>
+    <style>
+      body {
+        width: 280px;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 16px;
+        background: #fff7f7;
+        color: #222;
+      }
+      h3 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+      .status {
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: #e9f7ef;
+        color: #166534;
+        font-weight: 600;
+      }
+      .status.warning {
+        background: #fdecec;
+        color: #b42318;
+      }
+      .text {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 1.5;
+        word-break: break-word;
+      }
+      .small {
+        margin-top: 12px;
+        font-size: 11px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Cyberbullying Detector</h3>
+    <div id="status" class="status">Waiting for scan...</div>
+    <div id="text" class="text">No bullying text detected yet.</div>
+    <div class="small">This popup updates when the page content is flagged.</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
